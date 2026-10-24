@@ -149,7 +149,7 @@ details summary{cursor:pointer}
     "niveau": "eA",
     "pruefung": "",
     "start": {
-     "version": 1,
+     "version": 2,
      "thema": "Funktionsscharen; uneigentliche Integrale",
      "luecken": "",
      "noten": [],
@@ -158,7 +158,31 @@ details summary{cursor:pointer}
        "name": "Funktionsscharen",
        "ampel": "rot"
       },
-      "Uneigentliche Integrale"
+      "Uneigentliche Integrale",
+      {
+       "name": "Funktionsscharen: Nullstellen & Fallunterscheidung",
+       "ampel": "gelb"
+      },
+      {
+       "name": "Funktionsscharen: Extrem- & Wendepunkte",
+       "ampel": "gelb"
+      },
+      {
+       "name": "Funktionsscharen: Ortskurven",
+       "ampel": "rot"
+      },
+      {
+       "name": "Funktionsscharen: Parameter bestimmen",
+       "ampel": "gelb"
+      },
+      {
+       "name": "Steckbriefaufgaben",
+       "ampel": "gelb"
+      },
+      {
+       "name": "Vektoren & Geraden (Wiederholung)",
+       "ampel": "gelb"
+      }
      ]
     }
    },
@@ -360,6 +384,30 @@ details summary{cursor:pointer}
      "id": "m2",
      "art": "Übersicht",
      "titel": "Was ist schon gescannt? (Inhaltsübersicht Stark)",
+     "pfad": ""
+    },
+    {
+     "id": "m3",
+     "art": "Übungsklausur Lehrkraft",
+     "titel": "Klausur 13 Probe – Funktionsscharen + Vektoren/Geraden",
+     "pfad": ""
+    },
+    {
+     "id": "m4",
+     "art": "Übungsklausur Lehrkraft",
+     "titel": "Übungsaufgaben Funktionsscharen",
+     "pfad": ""
+    },
+    {
+     "id": "m5",
+     "art": "Eigene Mitschrift",
+     "titel": "GoodNotes-Heft Mathe 13 (Scharen, Steckbriefe, Integrale)",
+     "pfad": ""
+    },
+    {
+     "id": "m6",
+     "art": "Eigene Mitschrift",
+     "titel": "GoodNotes-Heft Mathe 13 – Teil 2",
      "pfad": ""
     }
    ],
@@ -964,6 +1012,296 @@ details summary{cursor:pointer}
     ],
     "richtig": 0,
     "erklaerung": "Etwa 10 Minuten im Durchschnitt. Tipp: mit der Aufgabe beginnen, die dir am leichtesten vorkommt."
+   }
+  ]
+ },
+ {
+  "id": "mathe-scharen",
+  "fachId": "mathe",
+  "titel": "Funktionsscharen + Vektoren – Klausur 29.10.",
+  "niveau": "gA/eA",
+  "beschreibung": "Begriffe, Verfahren und typische Rechenschritte zu Funktionsscharen (Nullstellen, Extrem- und Wendepunkte, Ortskurven, Parameter bestimmen), Steckbriefen und zur Wiederholung Vektoren/Geraden.",
+  "quelle": "Leos Mathe-Unterlagen 13 (GoodNotes: Mathe_LK_13.pdf, Mathe_13_Grundkurs.pdf); Übungsklausuren der Lehrkraft (Klausur_13_Probe.pdf, Uebungsaufgaben_Funktionsscharen_GK.pdf)",
+  "themen": [
+   "Funktionsscharen: Nullstellen & Fallunterscheidung",
+   "Funktionsscharen: Extrem- & Wendepunkte",
+   "Funktionsscharen: Ortskurven",
+   "Funktionsscharen: Parameter bestimmen",
+   "Steckbriefaufgaben",
+   "Vektoren & Geraden (Wiederholung)"
+  ],
+  "cards": [
+   {
+    "id": "s01",
+    "front": "Funktionsschar",
+    "back": "Menge von Funktionen, deren Term einen Parameter (z. B. a, k, t) enthält. Für jeden Parameterwert entsteht eine Funktion der Schar."
+   },
+   {
+    "id": "s02",
+    "front": "Wie rechnet man mit dem Parameter?",
+    "back": "Wie mit einer festen Zahl: ableiten nach x, der Parameter bleibt als Faktor/Summand stehen."
+   },
+   {
+    "id": "s03",
+    "front": "Ortskurve – Verfahren",
+    "back": "1. Punkt mit Parameter bestimmen · 2. x-Koordinate nach dem Parameter auflösen · 3. in die y-Koordinate einsetzen · 4. Definitionsbereich angeben."
+   },
+   {
+    "id": "s04",
+    "front": "Notwendige / hinreichende Bedingung Extrempunkt",
+    "back": "Notwendig: f′(x) = 0. Hinreichend: f′(x) = 0 und f″(x) ≠ 0 (f″ < 0 Hochpunkt, f″ > 0 Tiefpunkt)."
+   },
+   {
+    "id": "s05",
+    "front": "Bedingung Wendepunkt",
+    "back": "f″(x) = 0 und f‴(x) ≠ 0. Steigung der Wendetangente: f′(x_W)."
+   },
+   {
+    "id": "s06",
+    "front": "Berühren der x-Achse in x₀",
+    "back": "Doppelte Nullstelle: f(x₀) = 0 und f′(x₀) = 0 – kein Vorzeichenwechsel."
+   },
+   {
+    "id": "s07",
+    "front": "Punktsymmetrisch zum Ursprung (ganzrational)",
+    "back": "Nur ungerade Exponenten, z. B. f(x) = ax³ + cx. Es gilt f(−x) = −f(x)."
+   },
+   {
+    "id": "s08",
+    "front": "Achsensymmetrisch zur y-Achse (ganzrational)",
+    "back": "Nur gerade Exponenten, z. B. f(x) = ax⁴ + bx² + c. Es gilt f(−x) = f(x)."
+   },
+   {
+    "id": "s09",
+    "front": "Parameter bestimmen, wenn der Graph durch P(x₀ | y₀) geht",
+    "back": "Koordinaten einsetzen: f_a(x₀) = y₀ und nach a auflösen."
+   },
+   {
+    "id": "s10",
+    "front": "Verbindungsvektor AB",
+    "back": "AB = B − A (Spitze minus Fuß)."
+   },
+   {
+    "id": "s11",
+    "front": "Länge eines Vektors",
+    "back": "|v| = √(v₁² + v₂² + v₃²)."
+   },
+   {
+    "id": "s12",
+    "front": "Punktprobe bei einer Geraden",
+    "back": "Punkt = Geradengleichung setzen, r aus einer Zeile bestimmen und in allen drei Zeilen prüfen."
+   },
+   {
+    "id": "s13",
+    "front": "Spurpunkt mit der x₁x₂-Ebene",
+    "back": "x₃-Koordinate der Geraden = 0 setzen, r bestimmen, einsetzen."
+   },
+   {
+    "id": "s14",
+    "front": "Parallelogramm ABCD ergänzen",
+    "back": "D = A + BC (oder D = C + BA)."
+   }
+  ],
+  "items": [
+   {
+    "id": "s-q01",
+    "frage": "f_a(x) = x² − 2ax + 4 hat den Tiefpunkt T(a | 4 − a²). Wie lautet die Ortskurve?",
+    "antworten": [
+     "y = 4 − x²",
+     "y = 4 − a²",
+     "y = x² − 4",
+     "y = 4 − 2x"
+    ],
+    "richtig": 0,
+    "erklaerung": "x = a ⇒ a = x in die y-Koordinate einsetzen: y = 4 − x². Die Ortskurve enthält keinen Parameter mehr."
+   },
+   {
+    "id": "s-q02",
+    "frage": "Hochpunkt H(2k | 4k²) mit k > 0. Ortskurve?",
+    "antworten": [
+     "y = x², x > 0",
+     "y = 4x², x > 0",
+     "y = 2x²",
+     "y = x²/4"
+    ],
+    "richtig": 0,
+    "erklaerung": "k = x/2 ⇒ y = 4·(x/2)² = x²; wegen k > 0 nur x > 0."
+   },
+   {
+    "id": "s-q03",
+    "frage": "Welche Nullstellen hat f_t(x) = x·(x − 3t)²?",
+    "antworten": [
+     "x = 0 und x = 3t (doppelt)",
+     "x = 0 und x = −3t",
+     "nur x = 3t",
+     "x = 0, x = 3t und x = −3t"
+    ],
+    "richtig": 0,
+    "erklaerung": "Satz vom Nullprodukt: x = 0 oder x − 3t = 0. Der Faktor steht im Quadrat ⇒ doppelte Nullstelle bei 3t."
+   },
+   {
+    "id": "s-q04",
+    "frage": "f′_t(x) = 3(x − t)(x − 3t), f″_t(x) = 6x − 12t, t > 0. Was liegt bei x = t?",
+    "antworten": [
+     "Hochpunkt, weil f″(t) = −6t < 0",
+     "Tiefpunkt, weil f″(t) = 6t > 0",
+     "Wendepunkt",
+     "Sattelpunkt"
+    ],
+    "richtig": 0,
+    "erklaerung": "f″(t) = 6t − 12t = −6t; wegen t > 0 negativ ⇒ Hochpunkt."
+   },
+   {
+    "id": "s-q05",
+    "frage": "Wofür setzt man den x-Wert eines Extrempunkts ein, um die y-Koordinate zu bekommen?",
+    "antworten": [
+     "in f",
+     "in f′",
+     "in f″",
+     "in die Ortskurve"
+    ],
+    "richtig": 0,
+    "erklaerung": "Die y-Koordinate liefert immer die Funktion f selbst – f′ gibt nur die Steigung."
+   },
+   {
+    "id": "s-q06",
+    "frage": "Der Graph von f_a(x) = x² + ax − a soll durch P(1 | 3) gehen. a = ?",
+    "antworten": [
+     "Es gibt kein solches a",
+     "a = 3",
+     "a = 2",
+     "a = 1"
+    ],
+    "richtig": 0,
+    "erklaerung": "f_a(1) = 1 + a − a = 1 ≠ 3 für jedes a. Alle Graphen gehen durch (1 | 1) – ein gemeinsamer Punkt der Schar."
+   },
+   {
+    "id": "s-q07",
+    "frage": "Welcher Ansatz passt zu: 3. Grad, punktsymmetrisch zum Ursprung?",
+    "antworten": [
+     "f(x) = ax³ + cx",
+     "f(x) = ax³ + bx²",
+     "f(x) = ax³ + bx² + cx",
+     "f(x) = ax⁴ + cx²"
+    ],
+    "richtig": 0,
+    "erklaerung": "Punktsymmetrie zum Ursprung ⇒ nur ungerade Exponenten."
+   },
+   {
+    "id": "s-q08",
+    "frage": "A(1 | 2 | 0), B(3 | −1 | 6). Wie lang ist AB?",
+    "antworten": [
+     "7",
+     "√13",
+     "49",
+     "6"
+    ],
+    "richtig": 0,
+    "erklaerung": "AB = (2 | −3 | 6), |AB| = √(4 + 9 + 36) = √49 = 7."
+   },
+   {
+    "id": "s-q09",
+    "frage": "Wie bestimmt man den Spurpunkt einer Geraden mit der x₁x₂-Ebene?",
+    "antworten": [
+     "x₃ = 0 setzen",
+     "x₁ = 0 setzen",
+     "r = 0 setzen",
+     "alle Koordinaten = 0 setzen"
+    ],
+    "richtig": 0,
+    "erklaerung": "In der x₁x₂-Ebene ist die dritte Koordinate 0."
+   },
+   {
+    "id": "s-x01",
+    "frage": "Welche Aussagen gelten für die Schar f_t(x) = x³ − 6t·x² + 9t²·x mit t > 0?",
+    "antworten": [
+     "Alle Graphen gehen durch den Ursprung.",
+     "Der Hochpunkt ist H(t | 4t³).",
+     "Der Wendepunkt liegt bei x = 2t.",
+     "Der Tiefpunkt liegt bei x = −3t.",
+     "Die Ortskurve der Hochpunkte ist y = x³.",
+     "Der Graph schneidet die x-Achse bei 3t mit Vorzeichenwechsel."
+    ],
+    "richtige": [
+     0,
+     1,
+     2
+    ],
+    "erklaerung": "Tiefpunkt T(3t | 0); Ortskurve y = 4x³; bei 3t berührt der Graph die x-Achse (doppelte Nullstelle, kein Vorzeichenwechsel)."
+   },
+   {
+    "id": "s-x02",
+    "frage": "Welche Schritte gehören zum Bestimmen einer Ortskurve?",
+    "antworten": [
+     "x-Koordinate nach dem Parameter auflösen",
+     "In die y-Koordinate einsetzen",
+     "Definitionsbereich angeben",
+     "f″ gleich null setzen",
+     "Den Parameter gleich null setzen",
+     "Die Nullstellen der Ortskurve berechnen"
+    ],
+    "richtige": [
+     0,
+     1,
+     2
+    ],
+    "erklaerung": "f″ = 0 gehört zum Wendepunkt; den Parameter auf 0 setzen oder Nullstellen der Ortskurve suchen gehört nicht zum Verfahren."
+   },
+   {
+    "id": "s-x03",
+    "frage": "Welche Bedingungen gehören zu: „Der Graph hat in W(1 | 2) einen Wendepunkt mit der Steigung −3“?",
+    "antworten": [
+     "f(1) = 2",
+     "f″(1) = 0",
+     "f′(1) = −3",
+     "f′(1) = 0",
+     "f(2) = 1",
+     "f″(1) = −3"
+    ],
+    "richtige": [
+     0,
+     1,
+     2
+    ],
+    "erklaerung": "Punkt → f(1) = 2, Wendepunkt → f″(1) = 0, Steigung → f′(1) = −3."
+   }
+  ],
+  "tf": [
+   {
+    "id": "s-t01",
+    "aussage": "Eine Ortskurve enthält noch den Parameter.",
+    "wahr": false,
+    "erklaerung": "Falsch. Der Parameter wird gerade eliminiert – übrig bleibt eine Gleichung in x und y."
+   },
+   {
+    "id": "s-t02",
+    "aussage": "Für f_a(x) = x² − 2ax + 4 gehen alle Graphen durch (0 | 4).",
+    "wahr": true,
+    "erklaerung": "Richtig. f_a(0) = 4 hängt nicht von a ab."
+   },
+   {
+    "id": "s-t03",
+    "aussage": "f″(x₀) = 0 reicht als Nachweis für einen Wendepunkt.",
+    "wahr": false,
+    "erklaerung": "Falsch. Das ist nur die notwendige Bedingung; zusätzlich f‴(x₀) ≠ 0 (oder Vorzeichenwechsel von f″)."
+   },
+   {
+    "id": "s-t04",
+    "aussage": "Bei einer doppelten Nullstelle berührt der Graph die x-Achse.",
+    "wahr": true,
+    "erklaerung": "Richtig. Kein Vorzeichenwechsel, f(x₀) = 0 und f′(x₀) = 0."
+   },
+   {
+    "id": "s-t05",
+    "aussage": "Der Verbindungsvektor AB wird mit A − B berechnet.",
+    "wahr": false,
+    "erklaerung": "Falsch. AB = B − A (Spitze minus Fuß)."
+   },
+   {
+    "id": "s-t06",
+    "aussage": "Ist das Skalarprodukt zweier Vektoren 0, stehen sie senkrecht aufeinander.",
+    "wahr": true,
+    "erklaerung": "Richtig. So prüft man einen rechten Winkel."
    }
   ]
  },
@@ -3869,6 +4207,349 @@ details summary{cursor:pointer}
    ],
    "loesung": "<p>Das Modell nach Vorlaufer (2003) beschreibt die touristische Erschließung einer Peripherie vom Zentrum aus, hier <b>Bangkok</b> (Zentrum) und <b>Phuket</b> (Peripherie).</p><p><b>1. Vortouristische Phase:</b> Es gibt noch keine Tourismuswirtschaft; Phuket hat nur einzelne Agrar- und Kleinbetriebe. <b>2. Initialphase:</b> Bangkok erhält ausländische Direktinvestitionen und entwickelt sich zum Tourismuszentrum. In Phuket entstehen erste Hotels, die mit Nahrungsmitteln, Baustoffen und Agrarprodukten aus Bangkok beliefert werden – Phuket ist stark abhängig. <b>3. Wachstumsphase:</b> Phuket wird mit viel Kapital und Zulieferungen aus Bangkok ausgebaut; ausländische Direktinvestitionen fließen nun auch direkt nach Phuket. Die Abhängigkeit bleibt. <b>4. Konsolidierungsphase:</b> Phuket hat eine eigene Infrastruktur, bezieht Waren zunehmend aus der Region und ist weniger von Bangkok abhängig; es erschließt selbst neue Tourismusorte.</p><p>Die Karte zeigt die heutige Bedeutung: 530 000 Touristen, überwiegend aus Thailand (86 %).</p>"
   }
+ },
+ {
+  "id": "mat-e1",
+  "fachId": "mathe",
+  "titel": "Funktionsscharen: Nullstellen & Fallunterscheidung",
+  "thema": "Funktionsscharen: Nullstellen & Fallunterscheidung",
+  "lesezeit": 5,
+  "abrufzeit": 6,
+  "quelle": "Leos Mathe-Unterlagen 13 (GoodNotes: Mathe_LK_13.pdf, Mathe_13_Grundkurs.pdf); Aufgabentypen nach Übungsklausuren der Lehrkraft (Klausur_13_Probe.pdf, Uebungsaufgaben_Funktionsscharen_GK.pdf)",
+  "lesen": "<h3>Was ist eine Funktionsschar?</h3><p>Ein Funktionsterm mit einem zusätzlichen <b>Parameter</b> (z. B. a, k, t). Für jeden Parameterwert entsteht eine eigene Funktion – zusammen bilden sie die <b>Schar</b>. Beim Rechnen behandelst du den Parameter <b>wie eine feste Zahl</b>.</p><h3>Nullstellen</h3><ul><li><b>x ausklammern</b>, wenn kein Absolutglied da ist: x² + 2ax = x·(x + 2a).</li><li><b>Satz vom Nullprodukt:</b> Ein Produkt ist 0, wenn ein Faktor 0 ist.</li><li>Sonst <b>pq-Formel</b> mit Parameter – die Diskriminante entscheidet über die Anzahl.</li></ul><h3>Fallunterscheidung</h3><p>Die Anzahl der Nullstellen kann vom Parameter abhängen: Diskriminante &gt; 0 → zwei, = 0 → eine (doppelt, Berührpunkt), &lt; 0 → keine. Bei <b>Division durch den Parameter</b> immer prüfen, ob er 0 sein darf.</p><h3>Gemeinsame Punkte</h3><p>Punkte, durch die <b>alle</b> Graphen gehen: zwei Scharfunktionen gleichsetzen (f<sub>a</sub>(x) = f<sub>b</sub>(x), a ≠ b) oder den Parameter-Teil = 0 setzen.</p>",
+  "kernpunkte": [
+   {
+    "punkt": "Parameter wie eine feste Zahl behandeln",
+    "stichworte": [
+     "parameter",
+     "feste zahl",
+     "konstante"
+    ]
+   },
+   {
+    "punkt": "x ausklammern + Satz vom Nullprodukt",
+    "stichworte": [
+     "ausklamm",
+     "nullprodukt",
+     "faktor"
+    ]
+   },
+   {
+    "punkt": "pq-Formel; Diskriminante bestimmt die Anzahl",
+    "stichworte": [
+     "pq",
+     "diskriminante",
+     "wurzel"
+    ]
+   },
+   {
+    "punkt": "Fallunterscheidung je nach Parameter",
+    "stichworte": [
+     "fallunterscheid",
+     "fall"
+    ]
+   },
+   {
+    "punkt": "Doppelte Nullstelle = Berührpunkt",
+    "stichworte": [
+     "doppelt",
+     "berühr",
+     "beruehr"
+    ]
+   },
+   {
+    "punkt": "Gemeinsame Punkte aller Graphen",
+    "stichworte": [
+     "gemeinsam",
+     "alle graphen",
+     "gleichsetz"
+    ]
+   }
+  ],
+  "aufgabe": {
+   "operator": "Bestimmen",
+   "zeit": 8,
+   "text": "Gegeben ist f_a(x) = x² + 2ax. Bestimmen Sie die Nullstellen und den Scheitelpunkt in Abhängigkeit von a sowie die Ortskurve der Scheitelpunkte.",
+   "tipps": [
+    "Ausklammern: Was steckt in beiden Summanden?",
+    "Scheitel: f′_a(x) = 0 setzen, x-Wert in f_a einsetzen.",
+    "Ortskurve: x = … nach a auflösen und in y einsetzen."
+   ],
+   "loesung": "<p>Nullstellen: x·(x + 2a) = 0 ⇒ x = 0 und x = −2a (für a = 0 nur x = 0, doppelt).<br>Scheitel: f′<sub>a</sub>(x) = 2x + 2a = 0 ⇒ x = −a; f<sub>a</sub>(−a) = a² − 2a² = −a² ⇒ S(−a | −a²).<br>Ortskurve: x = −a ⇒ a = −x ⇒ y = −x².</p>"
+  }
+ },
+ {
+  "id": "mat-e2",
+  "fachId": "mathe",
+  "titel": "Extrem- und Wendepunkte mit Parameter",
+  "thema": "Funktionsscharen: Extrem- & Wendepunkte",
+  "lesezeit": 5,
+  "abrufzeit": 7,
+  "quelle": "Leos Mathe-Unterlagen 13 (GoodNotes: Mathe_LK_13.pdf, Mathe_13_Grundkurs.pdf); Aufgabentypen nach Übungsklausuren der Lehrkraft (Klausur_13_Probe.pdf, Uebungsaufgaben_Funktionsscharen_GK.pdf)",
+  "lesen": "<h3>Ablauf (wie ohne Parameter)</h3><ol><li>f′, f″ (und ggf. f‴) bilden – der Parameter bleibt stehen.</li><li><b>Notwendige Bedingung:</b> f′(x) = 0 nach x auflösen → x hängt vom Parameter ab (z. B. x = t).</li><li><b>Hinreichende Bedingung:</b> f″(x<sub>E</sub>) einsetzen. &lt; 0 → Hochpunkt, &gt; 0 → Tiefpunkt. Vorzeichen hängt oft vom Parameter ab → Voraussetzung (z. B. t &gt; 0) nutzen!</li><li><b>y-Wert</b> mit f (nicht f′!) berechnen → Punkt wie H(t | 4t³).</li></ol><h3>Wendepunkte</h3><p>f″(x) = 0 und f‴(x) ≠ 0. Steigung der Wendetangente: f′(x<sub>W</sub>).</p><h3>Typische Fehler</h3><ul><li>y-Wert in f′ statt f eingesetzt.</li><li>Art des Extrempunkts nicht begründet.</li><li>Voraussetzung t &gt; 0 nicht genutzt.</li></ul>",
+  "kernpunkte": [
+   {
+    "punkt": "f′(x) = 0 als notwendige Bedingung",
+    "stichworte": [
+     "f'(x)=0",
+     "f′(x)",
+     "notwendig"
+    ]
+   },
+   {
+    "punkt": "f″ für die Art des Extrempunkts",
+    "stichworte": [
+     "f''",
+     "f″",
+     "hinreichend"
+    ]
+   },
+   {
+    "punkt": "Vorzeichen mit der Voraussetzung (t > 0) begründen",
+    "stichworte": [
+     "voraussetzung",
+     "t>0",
+     "t > 0",
+     "vorzeichen"
+    ]
+   },
+   {
+    "punkt": "y-Wert mit f berechnen, Punkt mit Parameter angeben",
+    "stichworte": [
+     "y-wert",
+     "einsetzen",
+     "punkt"
+    ]
+   },
+   {
+    "punkt": "Wendepunkt: f″ = 0 und f‴ ≠ 0",
+    "stichworte": [
+     "wendepunkt",
+     "f'''",
+     "f‴"
+    ]
+   },
+   {
+    "punkt": "Wendetangente: Steigung f′(x_W)",
+    "stichworte": [
+     "wendetangente",
+     "steigung"
+    ]
+   }
+  ],
+  "aufgabe": {
+   "operator": "Untersuchen",
+   "zeit": 12,
+   "text": "Gegeben ist f_t(x) = x⁴ − 2t·x² mit t > 0. Untersuchen Sie die Symmetrie, bestimmen Sie die Nullstellen, alle Extrempunkte mit ihrer Art und die Ortskurve der Tiefpunkte. Für welches t liegen die Tiefpunkte auf y = −9?",
+   "tipps": [
+    "Symmetrie: nur gerade Exponenten?",
+    "Nullstellen: x² ausklammern.",
+    "f′_t(x) = 4x³ − 4tx – auch hier ausklammern.",
+    "Für die Art: f″_t(x) = 12x² − 4t an jeder Stelle einsetzen."
+   ],
+   "loesung": "<p>Nur gerade Exponenten ⇒ achsensymmetrisch zur y-Achse.<br>Nullstellen: x²(x² − 2t) = 0 ⇒ x = 0 (doppelt), x = ±√(2t).<br>f′<sub>t</sub>(x) = 4x(x² − t) ⇒ x = 0, x = ±√t. f″<sub>t</sub>(0) = −4t &lt; 0 ⇒ H(0 | 0); f″<sub>t</sub>(±√t) = 8t &gt; 0 ⇒ T(±√t | −t²).<br>Ortskurve: x² = t ⇒ y = −x².<br>−t² = −9 ⇒ t = 3.</p>"
+  }
+ },
+ {
+  "id": "mat-e3",
+  "fachId": "mathe",
+  "titel": "Ortskurven bestimmen",
+  "thema": "Funktionsscharen: Ortskurven",
+  "lesezeit": 5,
+  "abrufzeit": 6,
+  "quelle": "Leos Mathe-Unterlagen 13 (GoodNotes: Mathe_LK_13.pdf, Mathe_13_Grundkurs.pdf); Aufgabentypen nach Übungsklausuren der Lehrkraft (Klausur_13_Probe.pdf, Uebungsaufgaben_Funktionsscharen_GK.pdf)",
+  "lesen": "<h3>Was ist eine Ortskurve?</h3><p>Die Kurve, auf der alle besonderen Punkte einer Schar liegen (z. B. alle Hochpunkte). Sie hat <b>keinen Parameter</b> mehr.</p><h3>Verfahren in 4 Schritten</h3><ol><li>Punkt mit Parameter bestimmen, z. B. H(2k | 4k²).</li><li><b>x-Koordinate nach dem Parameter auflösen:</b> x = 2k ⇒ k = x/2.</li><li><b>In die y-Koordinate einsetzen:</b> y = 4·(x/2)² = x².</li><li><b>Definitionsbereich</b> angeben: Gilt k &gt; 0 und x = 2k, dann nur x &gt; 0.</li></ol><h3>Kontrolle</h3><p>Einen Parameterwert einsetzen: Liegt der Punkt (z. B. für k = 1) wirklich auf der Ortskurve?</p>",
+  "kernpunkte": [
+   {
+    "punkt": "Ortskurve: Kurve aller besonderen Punkte, ohne Parameter",
+    "stichworte": [
+     "ohne parameter",
+     "alle punkte",
+     "ortskurve"
+    ]
+   },
+   {
+    "punkt": "x-Koordinate nach dem Parameter auflösen",
+    "stichworte": [
+     "auflösen",
+     "aufloesen",
+     "nach k",
+     "nach t",
+     "nach a"
+    ]
+   },
+   {
+    "punkt": "In die y-Koordinate einsetzen",
+    "stichworte": [
+     "einsetzen",
+     "y-koordinate"
+    ]
+   },
+   {
+    "punkt": "Definitionsbereich aus der Parameter-Bedingung",
+    "stichworte": [
+     "definitionsbereich",
+     "x>0",
+     "x > 0",
+     "bereich"
+    ]
+   },
+   {
+    "punkt": "Kontrolle mit einem Parameterwert",
+    "stichworte": [
+     "kontrolle",
+     "probe"
+    ]
+   }
+  ],
+  "aufgabe": {
+   "operator": "Bestimmen",
+   "zeit": 15,
+   "text": "Gegeben ist für k > 0 die Schar f_k(x) = −(1/k)·x³ + 3x². Bestimmen Sie die Extrempunkte mit Art, die Ortskurve der Hochpunkte mit x-Bereich, den Wendepunkt und die Ortskurve der Wendepunkte.",
+   "tipps": [
+    "f′_k(x) = −(3/k)x² + 6x: x ausklammern.",
+    "f″_k(x) = −(6/k)x + 6 an beiden Stellen einsetzen.",
+    "Hochpunkt H(2k | …): x = 2k nach k auflösen.",
+    "k > 0 ⇒ welche x-Werte sind möglich?"
+   ],
+   "loesung": "<p>f′<sub>k</sub>(x) = x(6 − 3x/k) = 0 ⇒ x = 0, x = 2k. f″<sub>k</sub>(0) = 6 &gt; 0 ⇒ T(0 | 0); f″<sub>k</sub>(2k) = −6 &lt; 0 ⇒ H(2k | 4k²).<br>Ortskurve der Hochpunkte: k = x/2 ⇒ y = x² für x &gt; 0.<br>f″<sub>k</sub>(x) = 0 ⇒ x = k ⇒ W(k | 2k²); Ortskurve y = 2x² für x &gt; 0.</p>"
+  }
+ },
+ {
+  "id": "mat-e4",
+  "fachId": "mathe",
+  "titel": "Steckbriefaufgaben",
+  "thema": "Steckbriefaufgaben",
+  "lesezeit": 4,
+  "abrufzeit": 6,
+  "quelle": "Leos Mathe-Unterlagen 13 (GoodNotes: Mathe_LK_13.pdf, Mathe_13_Grundkurs.pdf); Aufgabentypen nach Übungsklausuren der Lehrkraft (Klausur_13_Probe.pdf, Uebungsaufgaben_Funktionsscharen_GK.pdf)",
+  "lesen": "<h3>Vorgehen</h3><ol><li><b>Ansatz</b> nach Grad: 3. Grad → f(x) = ax³ + bx² + cx + d. Symmetrie nutzen: punktsymmetrisch zum Ursprung → nur ungerade Exponenten; achsensymmetrisch zur y-Achse → nur gerade.</li><li><b>Übersetzen</b> in Funktionssprache: Punkt → f(x) = y; Extrempunkt → zusätzlich f′(x) = 0; Wendepunkt → f″(x) = 0; Steigung m → f′(x) = m; berührt x-Achse → f(x) = 0 und f′(x) = 0.</li><li><b>Gleichungssystem</b> lösen (so viele Bedingungen wie Unbekannte).</li><li><b>Probe</b>, v. a. die Art des Extrempunkts mit f″ prüfen.</li></ol>",
+  "kernpunkte": [
+   {
+    "punkt": "Ansatz nach Grad aufstellen",
+    "stichworte": [
+     "ansatz",
+     "ax³",
+     "ax^3",
+     "grad"
+    ]
+   },
+   {
+    "punkt": "Symmetrie: ungerade bzw. gerade Exponenten",
+    "stichworte": [
+     "symmetr",
+     "ungerade",
+     "gerade"
+    ]
+   },
+   {
+    "punkt": "Bedingungen in Funktionssprache übersetzen",
+    "stichworte": [
+     "f(",
+     "f'(",
+     "f′(",
+     "bedingung"
+    ]
+   },
+   {
+    "punkt": "Gleichungssystem lösen",
+    "stichworte": [
+     "gleichungssystem",
+     "lgs"
+    ]
+   },
+   {
+    "punkt": "Probe machen",
+    "stichworte": [
+     "probe"
+    ]
+   }
+  ],
+  "aufgabe": {
+   "operator": "Bestimmen",
+   "zeit": 10,
+   "text": "Eine ganzrationale Funktion dritten Grades geht durch den Ursprung und hat in W(1 | 2) einen Wendepunkt mit der Steigung −3. Bestimmen Sie die Funktion.",
+   "tipps": [
+    "Durch den Ursprung ⇒ d = 0.",
+    "Wendepunkt W(1|2) liefert zwei Bedingungen, die Steigung eine dritte.",
+    "Aus f″(1) = 0: 6a + 2b = 0 ⇒ b = −3a."
+   ],
+   "loesung": "<p>Ansatz f(x) = ax³ + bx² + cx (d = 0).<br>f(1) = 2: a + b + c = 2 · f′(1) = −3: 3a + 2b + c = −3 · f″(1) = 0: 6a + 2b = 0.<br>⇒ a = 5, b = −15, c = 12 ⇒ f(x) = 5x³ − 15x² + 12x.</p>"
+  }
+ },
+ {
+  "id": "mat-e5",
+  "fachId": "mathe",
+  "titel": "Vektoren & Geraden – Wiederholung",
+  "thema": "Vektoren & Geraden (Wiederholung)",
+  "lesezeit": 4,
+  "abrufzeit": 6,
+  "quelle": "Leos Mathe-Unterlagen 13 (GoodNotes: Mathe_LK_13.pdf, Mathe_13_Grundkurs.pdf); Aufgabentypen nach Übungsklausuren der Lehrkraft (Klausur_13_Probe.pdf, Uebungsaufgaben_Funktionsscharen_GK.pdf)",
+  "lesen": "<h3>Grundwerkzeuge</h3><ul><li><b>Verbindungsvektor:</b> AB = B − A (Spitze minus Fuß).</li><li><b>Länge:</b> |v| = √(v₁² + v₂² + v₃²).</li><li><b>Rechter Winkel:</b> Skalarprodukt = 0, oder Pythagoras mit den Seitenlängen.</li><li><b>Parallelogramm ABCD:</b> D = A + BC.</li></ul><h3>Geraden</h3><ul><li><b>Gleichung:</b> g: x⃗ = A + r·AB (Stützvektor + Parameter · Richtungsvektor).</li><li><b>Punktprobe:</b> Punkt gleichsetzen, r aus einer Zeile bestimmen, in allen drei Zeilen prüfen.</li><li><b>Strecke:</b> Parameter eingeschränkt, z. B. 0 ≤ r ≤ 1 für die Strecke AB.</li><li><b>Spurpunkt</b> mit der x₁x₂-Ebene: x₃ = 0 setzen.</li></ul>",
+  "kernpunkte": [
+   {
+    "punkt": "Verbindungsvektor = Spitze minus Fuß",
+    "stichworte": [
+     "spitze",
+     "b-a",
+     "b − a",
+     "verbindungsvektor"
+    ]
+   },
+   {
+    "punkt": "Länge mit der Wurzel aus der Quadratsumme",
+    "stichworte": [
+     "länge",
+     "laenge",
+     "wurzel",
+     "betrag"
+    ]
+   },
+   {
+    "punkt": "Rechter Winkel: Skalarprodukt = 0",
+    "stichworte": [
+     "skalarprodukt",
+     "orthogonal",
+     "senkrecht"
+    ]
+   },
+   {
+    "punkt": "Geradengleichung: Stützvektor + r · Richtungsvektor",
+    "stichworte": [
+     "stütz",
+     "stuetz",
+     "richtungsvektor"
+    ]
+   },
+   {
+    "punkt": "Punktprobe in allen drei Zeilen",
+    "stichworte": [
+     "punktprobe",
+     "drei zeilen",
+     "alle zeilen"
+    ]
+   },
+   {
+    "punkt": "Spurpunkt: x₃ = 0 setzen",
+    "stichworte": [
+     "spurpunkt",
+     "x3=0",
+     "x3 = 0",
+     "x₃"
+    ]
+   }
+  ],
+  "aufgabe": {
+   "operator": "Berechnen / Prüfen",
+   "zeit": 10,
+   "text": "Prüfen Sie, ob Q(7 | 3 | −1) und R(5 | 2 | 1) auf g: x = (1 | 0 | 2) + r·(2 | 1 | −1) liegen. Für −1 ≤ r ≤ 2 beschreibt g eine Strecke – bestimmen Sie ihre Endpunkte und ihre Länge.",
+   "tipps": [
+    "Punktprobe: r aus der ersten Zeile, dann die anderen Zeilen prüfen.",
+    "Endpunkte: r = −1 und r = 2 einsetzen.",
+    "Länge: Abstand der Endpunkte oder |Richtungsvektor| · 3."
+   ],
+   "loesung": "<p>Q: r = 3 passt in allen Zeilen ⇒ Q liegt auf g. R: r = 2 aus x₁, ergibt (5 | 2 | 0) ≠ R ⇒ R liegt nicht auf g.<br>Endpunkte: r = −1 ⇒ (−1 | −1 | 3), r = 2 ⇒ (5 | 2 | 0).<br>Länge: |(2 | 1 | −1)| = √6, Parameterspanne 3 ⇒ 3√6 ≈ 7,35 LE.</p>"
+  }
  }
 ]
 </script>
@@ -5330,6 +6011,399 @@ details summary{cursor:pointer}
      }
     ],
     "loesung": "<p><b>Profitiert:</b> Laut Frankfurt Main Finance (M5a) haben sich seit 2016 rund 60 Institute angesiedelt oder vergrößert – mit rund 15 000 zusätzlichen Arbeitsplätzen und 1,3 Billionen € zusätzlichen Bankaktiva. Mit EZB, Bundesbank und AMLA gewinnt Frankfurt zudem als Sitz europäischer Institutionen.</p><p><b>Einschränkungen:</b> Die Helaba-Studie (M5b) nennt nur rund 3 500 Stellen, die den Stellenabbau durch die Konsolidierung der Banken nicht ausgleichen. M5a stammt von einem Verein, der den Finanzplatz fördert – die Zahlen sind daher vermutlich eher optimistisch. Im GFCI fällt Frankfurt von Platz 12 auf Platz 15, während London Platz 2 hält; beim GaWC liegt Frankfurt (Alpha) zwei Stufen unter London (Alpha++).</p><p><b>Urteil:</b> Frankfurt hat vom Brexit profitiert, vor allem als europäischer Standort von Banken und Aufsichtsbehörden. Eine echte Konkurrenz zu London ist es aber nicht – London bleibt deutlich stärker vernetzt, und Frankfurt konkurriert eher mit Paris, Luxemburg oder Dublin.</p>"
+   }
+  ]
+ },
+ {
+  "id": "mat-pk1",
+  "fachId": "mathe",
+  "titel": "Probeklausur: Funktionsscharen + Vektoren & Geraden",
+  "dauer": 90,
+  "hinweis": "Aufbau wie die Klausur am 29.10.: ca. 80 % Funktionsscharen, 20 % Wiederholung Vektoren/Geraden. Teil A (Aufg. 1–4) ohne Hilfsmittel, Teil B (Aufg. 5–7) mit Taschenrechner. Rechne auf Papier oder in GoodNotes und tippe hier die Ergebnisse je Teilaufgabe ein.",
+  "quelle": "Eigene Aufgaben nach dem Muster der Übungsklausuren der Lehrkraft (Klausur_13_Probe.pdf, Uebungsaufgaben_Funktionsscharen_GK.pdf); Themen aus Leos Mathe-Unterlagen 13 (GoodNotes: Mathe_LK_13.pdf, Mathe_13_Grundkurs.pdf)",
+  "material": [
+   {
+    "id": "M1",
+    "titel": "Aufgabenblatt Teil A (ohne Hilfsmittel)",
+    "html": "<p><b>Teil A – ohne Hilfsmittel (30 Min.)</b></p>\n<p><b>Aufgabe 1 – Funktionssprache (4 BE)</b><br>Übersetze in Funktionssprache bzw. in einen Satz:<br>\na) Die Funktion hat in W(1 | 2) einen Wendepunkt mit der Steigung −3.<br>\nb) Der Graph berührt die x-Achse bei x = 4.<br>\nc) f(−2) = 5 und f′(−2) = 0<br>\nd) f(0) = −1</p>\n<p><b>Aufgabe 2 – Drei Scharen (6 BE)</b><br>Für t ∈ ℝ: u<sub>t</sub>(x) = x² − t, v<sub>t</sub>(x) = (x + t)², w<sub>t</sub>(x) = −t·x².<br>\na) Ordne jede Aussage einer Schar zu und begründe am Term: I alle Graphen gehen durch den Ursprung · II alle Scheitel liegen auf der x-Achse · III alle Graphen sind nur nach oben/unten verschoben.<br>\nb) Für welches t ist der Graph von w<sub>t</sub> keine Parabel? Für welche t ist er nach unten geöffnet?</p>\n<p><b>Aufgabe 3 – Schar g<sub>a</sub>(x) = x² − 2ax + 4 (12 BE)</b><br>\na) Gib g<sub>1</sub>(x) an. b) Bestimme a so, dass der Graph durch P(2 | 0) verläuft. c) Schnittpunkt mit der y-Achse – was fällt auf? d) Tiefpunkt in Abhängigkeit von a mit Begründung der Art. e) Ortskurve aller Tiefpunkte. f) Für welche a gibt es keine Nullstellen?</p>\n<p><b>Aufgabe 4 – Vektoren (4 BE)</b><br>A(1 | 2 | 0), B(3 | −1 | 6).<br>a) Vektor AB und seine Länge. b) Gerade g durch A und B; liegt C(5 | −4 | 12) auf g?</p>"
+   },
+   {
+    "id": "M2",
+    "titel": "Aufgabenblatt Teil B (mit Hilfsmitteln)",
+    "html": "<p><b>Teil B – mit Taschenrechner und Formelsammlung (60 Min.)</b></p>\n<p><b>Aufgabe 5 – Schar f<sub>t</sub>(x) = x³ − 6t·x² + 9t²·x, t &gt; 0 (22 BE)</b><br>\na) Zeichne f<sub>1</sub> und f<sub>0,5</sub> (x von −0,5 bis 4).<br>\nb) Nullstellen in Abhängigkeit von t; begründe, warum der Graph die x-Achse bei x = 3t berührt.<br>\nc) Extrempunkte und ihre Art (Kontrolle: H(t | 4t³)).<br>\nd) Wendepunkt und Steigung der Wendetangente.<br>\ne) Ortskurve der Hochpunkte mit x-Bereich; beurteile: „Je größer t, desto höher der Hochpunkt.“<br>\nf) Bestimme t so, dass der Hochpunkt auf y = 32 liegt.<br>\ng) Zusatz: Fläche zwischen Graph und x-Achse über [0; 3t].</p>\n<p><b>Aufgabe 6 – Steckbrief (6 BE)</b><br>Funktion 3. Grades, punktsymmetrisch zum Ursprung, Hochpunkt H(−1 | 2). Mit Probe.</p>\n<p><b>Aufgabe 7 – Viereck im Raum (10 BE)</b><br>A(1 | 0 | 2), B(3 | 1 | 4), C(1 | 3 | 5).<br>\na) Seitenlängen von ABC; ist das Dreieck rechtwinklig? Wo liegt der rechte Winkel?<br>\nb) D so ergänzen, dass ABCD ein Parallelogramm ist; begründe, dass es ein Quadrat ist.<br>\nc) Schnittpunkt der Geraden AC mit der x₁x₂-Ebene.</p>"
+   }
+  ],
+  "aufgaben": [
+   {
+    "nr": 1,
+    "operator": "Angeben / Übersetzen",
+    "be": 4,
+    "zeit": 5,
+    "text": "Aufgabe 1 a)–d): Übersetze in Funktionssprache bzw. in einen Satz (Aufgabenblatt Teil A).",
+    "thema": [
+     "Steckbriefaufgaben"
+    ],
+    "erwartung": [
+     {
+      "text": "a) f(1) = 2, f′(1) = −3, f″(1) = 0",
+      "be": 1,
+      "stichworte": [
+       "f''(1)",
+       "f″(1)",
+       "-3"
+      ]
+     },
+     {
+      "text": "b) f(4) = 0 und f′(4) = 0",
+      "be": 1,
+      "stichworte": [
+       "f'(4)",
+       "f′(4)"
+      ]
+     },
+     {
+      "text": "c) waagerechte Tangente in (−2 | 5), z. B. Extrempunkt",
+      "be": 1,
+      "stichworte": [
+       "waagerecht",
+       "extrem",
+       "hochpunkt",
+       "tiefpunkt"
+      ]
+     },
+     {
+      "text": "d) Schnitt mit der y-Achse bei y = −1",
+      "be": 1,
+      "stichworte": [
+       "y-achse",
+       "achsenabschnitt"
+      ]
+     }
+    ],
+    "loesung": "<p>a) f(1) = 2, f′(1) = −3 und f″(1) = 0<br>b) f(4) = 0 und f′(4) = 0 (doppelte Nullstelle)<br>c) Der Graph hat im Punkt (−2 | 5) eine waagerechte Tangente, z. B. einen Extrempunkt.<br>d) Der Graph schneidet die y-Achse bei y = −1.</p>"
+   },
+   {
+    "nr": 2,
+    "operator": "Zuordnen + Begründen",
+    "be": 6,
+    "zeit": 7,
+    "text": "Aufgabe 2 a)–b): Drei Scharen u_t, v_t, w_t zuordnen und begründen (Aufgabenblatt Teil A).",
+    "thema": [
+     "Funktionsscharen: Nullstellen & Fallunterscheidung",
+     "Funktionsscharen: Parameter bestimmen"
+    ],
+    "erwartung": [
+     {
+      "text": "I → w_t, weil w_t(0) = 0 für jedes t",
+      "be": 1,
+      "stichworte": [
+       "w_t",
+       "wt",
+       "w(0)",
+       "ursprung"
+      ]
+     },
+     {
+      "text": "II → v_t, Scheitel (−t | 0) liegt auf der x-Achse",
+      "be": 1,
+      "stichworte": [
+       "v_t",
+       "vt",
+       "(-t",
+       "scheitel"
+      ]
+     },
+     {
+      "text": "III → u_t, −t verschiebt nur in y-Richtung",
+      "be": 1,
+      "stichworte": [
+       "u_t",
+       "ut",
+       "verschieb"
+      ]
+     },
+     {
+      "text": "t = 0: w_0(x) = 0 ist die x-Achse, keine Parabel",
+      "be": 1,
+      "stichworte": [
+       "t=0",
+       "t = 0",
+       "x-achse"
+      ]
+     },
+     {
+      "text": "t > 0: Faktor −t negativ → nach unten geöffnet",
+      "be": 2,
+      "stichworte": [
+       "t>0",
+       "t > 0",
+       "negativ",
+       "unten"
+      ]
+     }
+    ],
+    "loesung": "<p>a) I gehört zu w<sub>t</sub>: w<sub>t</sub>(0) = −t·0 = 0. II gehört zu v<sub>t</sub>: Scheitel S(−t | 0). III gehört zu u<sub>t</sub>: −t verschiebt die Normalparabel nur nach oben oder unten.<br>b) Für t = 0 ist w<sub>0</sub>(x) = 0 (die x-Achse). Für t &gt; 0 ist −t &lt; 0, die Parabel ist nach unten geöffnet.</p>"
+   },
+   {
+    "nr": 3,
+    "operator": "Bestimmen / Untersuchen",
+    "be": 12,
+    "zeit": 13,
+    "text": "Aufgabe 3 a)–f): Schar g_a(x) = x² − 2ax + 4 untersuchen (Aufgabenblatt Teil A).",
+    "thema": [
+     "Funktionsscharen: Extrem- & Wendepunkte",
+     "Funktionsscharen: Ortskurven",
+     "Funktionsscharen: Parameter bestimmen",
+     "Funktionsscharen: Nullstellen & Fallunterscheidung"
+    ],
+    "erwartung": [
+     {
+      "text": "a) g₁(x) = x² − 2x + 4",
+      "be": 1,
+      "stichworte": [
+       "x²-2x+4",
+       "x^2-2x+4",
+       "x² - 2x + 4"
+      ]
+     },
+     {
+      "text": "b) 8 − 4a = 0 → a = 2",
+      "be": 2,
+      "stichworte": [
+       "a=2",
+       "a = 2"
+      ]
+     },
+     {
+      "text": "c) S_y(0 | 4) – alle Graphen gehen durch diesen Punkt",
+      "be": 2,
+      "stichworte": [
+       "(0|4)",
+       "(0 | 4)",
+       "alle"
+      ]
+     },
+     {
+      "text": "d) g′ = 2x − 2a = 0 → x = a; g″ = 2 > 0; T(a | 4 − a²)",
+      "be": 3,
+      "stichworte": [
+       "4-a²",
+       "4-a^2",
+       "4 - a",
+       "x=a",
+       "x = a"
+      ]
+     },
+     {
+      "text": "e) Ortskurve y = 4 − x²",
+      "be": 2,
+      "stichworte": [
+       "4-x²",
+       "4-x^2",
+       "4 - x",
+       "ortskurve"
+      ]
+     },
+     {
+      "text": "f) 4 − a² > 0 → −2 < a < 2",
+      "be": 2,
+      "stichworte": [
+       "-2<a<2",
+       "-2 < a < 2",
+       "betrag"
+      ]
+     }
+    ],
+    "loesung": "<p>a) g<sub>1</sub>(x) = x² − 2x + 4<br>b) g<sub>a</sub>(2) = 4 − 4a + 4 = 0 ⇒ a = 2<br>c) g<sub>a</sub>(0) = 4 ⇒ S<sub>y</sub>(0 | 4); alle Graphen der Schar gehen durch diesen Punkt.<br>d) g′<sub>a</sub>(x) = 2x − 2a = 0 ⇒ x = a; g″<sub>a</sub>(x) = 2 &gt; 0 ⇒ Tiefpunkt; g<sub>a</sub>(a) = 4 − a² ⇒ T(a | 4 − a²)<br>e) x = a ⇒ a = x einsetzen: y = 4 − x² (für alle x)<br>f) Keine Nullstellen, wenn der Tiefpunkt über der x-Achse liegt: 4 − a² &gt; 0 ⇔ −2 &lt; a &lt; 2</p>"
+   },
+   {
+    "nr": 4,
+    "operator": "Berechnen / Prüfen",
+    "be": 4,
+    "zeit": 5,
+    "text": "Aufgabe 4 a)–b): Vektor AB, Länge, Gerade und Punktprobe (Aufgabenblatt Teil A).",
+    "thema": [
+     "Vektoren & Geraden (Wiederholung)"
+    ],
+    "erwartung": [
+     {
+      "text": "a) AB = (2 | −3 | 6), Länge √49 = 7",
+      "be": 2,
+      "stichworte": [
+       "7",
+       "(2|-3|6)",
+       "49"
+      ]
+     },
+     {
+      "text": "b) g: x = (1|2|0) + r·(2|−3|6); r = 2 → C liegt auf g",
+      "be": 2,
+      "stichworte": [
+       "r=2",
+       "r = 2",
+       "liegt auf"
+      ]
+     }
+    ],
+    "loesung": "<p>a) AB = (2 | −3 | 6), |AB| = √(4 + 9 + 36) = √49 = 7<br>b) g: x⃗ = (1 | 2 | 0) + r·(2 | −3 | 6). Für r = 2 erhält man (5 | −4 | 12) in allen drei Koordinaten ⇒ C liegt auf g.</p>"
+   },
+   {
+    "nr": 5,
+    "operator": "Untersuchen",
+    "be": 22,
+    "zeit": 35,
+    "text": "Aufgabe 5 a)–f) (+ Zusatz g): Schar f_t(x) = x³ − 6t·x² + 9t²·x untersuchen (Aufgabenblatt Teil B).",
+    "thema": [
+     "Funktionsscharen: Nullstellen & Fallunterscheidung",
+     "Funktionsscharen: Extrem- & Wendepunkte",
+     "Funktionsscharen: Ortskurven",
+     "Funktionsscharen: Parameter bestimmen"
+    ],
+    "erwartung": [
+     {
+      "text": "a) Skizze: f₁ mit H(1|4), T(3|0); f₀,₅ mit H(0,5|0,5), T(1,5|0)",
+      "be": 3,
+      "stichworte": [
+       "(1|4)",
+       "(1 | 4)",
+       "skizze",
+       "zeichn"
+      ]
+     },
+     {
+      "text": "b) f_t(x) = x·(x − 3t)²; Nullstellen 0 und 3t; doppelte NS → Berühren",
+      "be": 3,
+      "stichworte": [
+       "(x-3t)",
+       "3t",
+       "doppelt"
+      ]
+     },
+     {
+      "text": "c) f′ = 3(x − t)(x − 3t); H(t | 4t³) mit f″(t) = −6t < 0; T(3t | 0) mit f″(3t) = 6t > 0",
+      "be": 6,
+      "stichworte": [
+       "4t³",
+       "4t^3",
+       "-6t",
+       "6t",
+       "(3t|0)"
+      ]
+     },
+     {
+      "text": "d) W(2t | 2t³), Steigung −3t²",
+      "be": 4,
+      "stichworte": [
+       "2t³",
+       "2t^3",
+       "-3t²",
+       "-3t^2"
+      ]
+     },
+     {
+      "text": "e) y = 4x³ für x > 0; Aussage stimmt (4t³ wächst)",
+      "be": 3,
+      "stichworte": [
+       "4x³",
+       "4x^3",
+       "stimmt",
+       "wahr"
+      ]
+     },
+     {
+      "text": "f) 4t³ = 32 → t = 2; f₂(x) = x³ − 12x² + 36x",
+      "be": 3,
+      "stichworte": [
+       "t=2",
+       "t = 2",
+       "36x"
+      ]
+     }
+    ],
+    "loesung": "<p>a) f<sub>1</sub>: H(1 | 4), T(3 | 0), f<sub>1</sub>(4) = 4. f<sub>0,5</sub>: H(0,5 | 0,5), T(1,5 | 0), f<sub>0,5</sub>(3) = 6,75. Beide gehen durch den Ursprung.<br>b) f<sub>t</sub>(x) = x·(x − 3t)² ⇒ Nullstellen x = 0 und x = 3t. Bei 3t doppelte Nullstelle ohne Vorzeichenwechsel ⇒ Berührpunkt.<br>c) f′<sub>t</sub>(x) = 3x² − 12tx + 9t² = 3(x − t)(x − 3t); f″<sub>t</sub>(x) = 6x − 12t. f″<sub>t</sub>(t) = −6t &lt; 0 ⇒ H(t | 4t³); f″<sub>t</sub>(3t) = 6t &gt; 0 ⇒ T(3t | 0).<br>d) f″<sub>t</sub>(x) = 0 ⇒ x = 2t, f‴ = 6 ≠ 0; W(2t | 2t³); Steigung f′<sub>t</sub>(2t) = −3t².<br>e) x = t ⇒ y = 4x³ für x &gt; 0. Die Aussage stimmt: 4t³ wächst mit t, es gibt keinen höchsten Hochpunkt.<br>f) 4t³ = 32 ⇒ t = 2; f<sub>2</sub>(x) = x³ − 12x² + 36x.<br>g) Zusatz: F(x) = x⁴/4 − 2t·x³ + 4,5t²·x²; A = F(3t) − F(0) = 27t⁴/4 FE.</p>"
+   },
+   {
+    "nr": 6,
+    "operator": "Bestimmen",
+    "be": 6,
+    "zeit": 10,
+    "text": "Aufgabe 6: Steckbrief – Funktion 3. Grades, punktsymmetrisch zum Ursprung, Hochpunkt H(−1 | 2), mit Probe.",
+    "thema": [
+     "Steckbriefaufgaben"
+    ],
+    "erwartung": [
+     {
+      "text": "Ansatz f(x) = ax³ + cx (nur ungerade Exponenten)",
+      "be": 2,
+      "stichworte": [
+       "ax³+cx",
+       "ax^3+cx",
+       "ungerade",
+       "ax³ + cx"
+      ]
+     },
+     {
+      "text": "Bedingungen −a − c = 2 und 3a + c = 0",
+      "be": 2,
+      "stichworte": [
+       "3a+c",
+       "-a-c",
+       "3a + c"
+      ]
+     },
+     {
+      "text": "f(x) = x³ − 3x mit Probe (f″(−1) = −6 < 0)",
+      "be": 2,
+      "stichworte": [
+       "x³-3x",
+       "x^3-3x",
+       "x³ - 3x",
+       "probe"
+      ]
+     }
+    ],
+    "loesung": "<p>Punktsymmetrisch ⇒ f(x) = ax³ + cx, f′(x) = 3ax² + c.<br>f(−1) = 2: −a − c = 2 · f′(−1) = 0: 3a + c = 0 ⇒ c = −3a ⇒ −a + 3a = 2 ⇒ a = 1, c = −3.<br>f(x) = x³ − 3x. Probe: f(−1) = 2, f′(−1) = 0, f″(−1) = −6 &lt; 0 ⇒ Hochpunkt.</p>"
+   },
+   {
+    "nr": 7,
+    "operator": "Berechnen / Begründen",
+    "be": 10,
+    "zeit": 15,
+    "text": "Aufgabe 7 a)–c): Dreieck ABC, Quadrat ABCD, Spurpunkt der Geraden AC (Aufgabenblatt Teil B).",
+    "thema": [
+     "Vektoren & Geraden (Wiederholung)"
+    ],
+    "erwartung": [
+     {
+      "text": "a) |AB| = 3, |BC| = 3, |AC| = √18; 9 + 9 = 18 → rechter Winkel bei B",
+      "be": 4,
+      "stichworte": [
+       "√18",
+       "wurzel 18",
+       "18",
+       "bei b"
+      ]
+     },
+     {
+      "text": "b) D(−1 | 2 | 3); gleich lange, senkrechte Nachbarseiten → Quadrat",
+      "be": 3,
+      "stichworte": [
+       "(-1|2|3)",
+       "(-1 | 2 | 3)",
+       "quadrat"
+      ]
+     },
+     {
+      "text": "c) x₃ = 2 + 3r = 0 → r = −2/3; S(1 | −2 | 0)",
+      "be": 3,
+      "stichworte": [
+       "(1|-2|0)",
+       "(1 | -2 | 0)",
+       "-2/3"
+      ]
+     }
+    ],
+    "loesung": "<p>a) AB = (2 | 1 | 2), BC = (−2 | 2 | 1), AC = (0 | 3 | 3); |AB| = 3, |BC| = 3, |AC| = √18. Da 3² + 3² = 18 ⇒ rechtwinklig, rechter Winkel bei B (auch: AB·BC = 0).<br>b) D = A + BC = (−1 | 2 | 3); DC = (2 | 1 | 2) = AB. Benachbarte Seiten gleich lang und senkrecht ⇒ Quadrat.<br>c) AC: x⃗ = (1 | 0 | 2) + r·(0 | 3 | 3); x₃ = 0 ⇒ r = −2/3 ⇒ S(1 | −2 | 0).</p>"
    }
   ]
  }
